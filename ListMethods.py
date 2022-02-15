@@ -1,0 +1,36 @@
+mylist=[10,20,30]
+print(mylist)
+#####################
+mylist.append(40)
+mylist.append("abc")
+mylist.append([1,2,3])
+print(mylist)
+#########################
+mylist.remove([1,2,3])
+print(mylist)
+###############################
+mylist.insert(5,100)
+print(mylist)
+################################
+mylist.extend([200,300,400])
+print(mylist)
+##########################
+mylist.pop(4)
+print(mylist)
+#######################
+x=mylist.count("abc")
+print(x)
+#############################
+mylist.sort(reverse=True)
+print(mylist)
+###################################
+mylist=["aaaa","bbbbbb","cc","d"]
+mylist.sort(key=len)
+print(mylist)
+#######################################
+def mysort(x):
+    return x%5
+mylist=[2,4,5,3,15,20,13]
+print(mylist)
+mylist.sort(key=mysort)
+print(mylist)
